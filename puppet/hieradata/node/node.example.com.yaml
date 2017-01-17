@@ -1,0 +1,10 @@
+---
+ntp::restrict:
+  -
+ntp::autoupdate: true
+ntp::enable: true
+ntp::servers:
+  - kermit.example.com iburst
+  - 0.us.pool.ntp.org iburst
+  - 1.us.pool.ntp.org iburst
+  - 2.us.pool.ntp.org iburst
