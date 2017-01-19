@@ -1,3 +1,5 @@
+# see https://github.com/voxpupuli/puppet-nginx for options inc adding in php support
+
 exec { 'nginx_module':
     command => "/bin/puppet module install puppet/nginx",
     onlyif => "/usr/bin/test ! -d /etc/puppet/modules/nginx"
